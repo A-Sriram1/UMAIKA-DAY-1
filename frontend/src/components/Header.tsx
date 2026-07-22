@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header className="h-16 bg-slate-900 border-b border-slate-800 flex items-center justify-between px-6 flex-shrink-0">
       {/* Search */}
-      <div className="relative flex-1 max-w-md">
+      <div className="hidden sm:block relative flex-1 max-w-md">
         <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
         <input
           type="text"

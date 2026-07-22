@@ -81,7 +81,7 @@ export default function CleanPage() {
       {categories.map(cat => (
         <div key={cat}>
           <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-3">{cat}</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {OPERATIONS.filter(o => o.category === cat).map(op => {
               const active = ops.has(op.id);
               return (
@@ -146,7 +146,7 @@ export default function CleanPage() {
             <CheckCircle className="w-5 h-5 text-emerald-400" />
             <h2 className="text-sm font-semibold text-emerald-400">Cleaning Complete</h2>
           </div>
-          <div className="grid grid-cols-3 divide-x divide-slate-800">
+          <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-slate-800">
             <div className="p-5 text-center">
               <p className="text-3xl font-bold text-white">{result.original_rows.toLocaleString()}</p>
               <p className="text-xs text-slate-400 mt-1">Rows Before</p>

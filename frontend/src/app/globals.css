@@ -226,3 +226,12 @@ body {
   background: linear-gradient(135deg, rgba(5,150,105,0.2), rgba(16,185,129,0.1));
   border-color: rgba(5,150,105,0.4);
 }
+
+/* Hide scrollbar for mobile nav */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

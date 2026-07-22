@@ -115,7 +115,7 @@ export default function UploadPage() {
           <Info className="w-4 h-4 text-blue-400" />
           <h2 className="text-sm font-semibold text-slate-200">Accepted Dataset Types</h2>
         </div>
-        <div className="grid grid-cols-3 sm:grid-cols-6 gap-2">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2">
           {DATASET_TYPES.map(t => (
             <span key={t} className="badge badge-blue text-center justify-center py-1.5">{t}</span>
           ))}
